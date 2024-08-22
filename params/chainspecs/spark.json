@@ -1,31 +1,19 @@
 {
-  "config": {
-    "ChainName": "spark",
-    "chainId": 123,
-    "consensus": "aura",
-    "homesteadBlock": 0,
-    "eip150Block": 0,
-    "eip155Block": 0,
-    "byzantiumBlock": 0,
-    "constantinopleBlock": 442212,
-    "petersburgBlock": 1300000,
-    "istanbulBlock": 1300000,
-    "berlinBlock": 1300000,
-    "londonBlock": 14707000,
-    "burntContract": {
-      "0": "0x1559000000000000000000000000000000000000"
-    }
+  "ChainName": "spark",
+  "chainId": 123,
+  "consensus": "aura",
+  "homesteadBlock": 0,
+  "eip150Block": 0,
+  "eip155Block": 0,
+  "byzantiumBlock": 0,
+  "constantinopleBlock": 442212,
+  "petersburgBlock": 1300000,
+  "istanbulBlock": 1300000,
+  "berlinBlock": 1300000,
+  "londonBlock": 14707000,
+  "burntContract": {
+    "0": "0x1559000000000000000000000000000000000000"
   },
-  "nonce": "0x0",
-  "seal": {
-    "authorityRound": {
-      "step": 0,
-      "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-    }
-  },
-  "difficulty": "0x20000",
-  "gasLimit": "0x5F5E100",
-  "baseFeePerGas": "0x3b9aca00",
   "aura": {
     "stepDuration": 5,
     "blockReward": 0,

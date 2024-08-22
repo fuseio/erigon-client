@@ -264,6 +264,26 @@ var NetworkConfigs map[NetworkType]NetworkConfig = map[NetworkType]NetworkConfig
 		ContractDeploymentBlock:         155530,
 		BootNodes:                       HoleskyBootstrapNodes,
 	},
+
+	SparkNetwork: {
+		GossipMaxSize:                   1 << 20, // 1 MiB
+		GossipMaxSizeBellatrix:          10485760,
+		MaxChunkSize:                    1 << 20, // 1 MiB
+		AttestationSubnetCount:          64,
+		AttestationPropagationSlotRange: 32,
+		MaxRequestBlocks:                1 << 10, // 1024
+		TtfbTimeout:                     ReqTimeout,
+		RespTimeout:                     RespTimeout,
+		MaximumGossipClockDisparity:     500 * time.Millisecond,
+		MessageDomainInvalidSnappy:      [4]byte{00, 00, 00, 00},
+		MessageDomainValidSnappy:        [4]byte{01, 00, 00, 00},
+		Eth2key:                         "eth2",
+		AttSubnetKey:                    "attnets",
+		SyncCommsSubnetKey:              "syncnets",
+		MinimumPeersInSubnetSearch:      20,
+		ContractDeploymentBlock:         19475089,
+		BootNodes:                       GnosisBootstrapNodes,
+	},
 }
 
 // Trusted checkpoint sync endpoints: https://eth-clients.github.io/checkpoint-sync-endpoints/
